@@ -1,0 +1,15 @@
+@import "tailwindcss";
+/* Add these Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix for navbar covering content */
+body {
+  padding-top: 4rem;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  transition: all 0.3s ease;
+}
