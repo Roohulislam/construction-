@@ -1,6 +1,6 @@
 import AboutUs from './components/AboutUs'
 import ChooseUs from './components/ChooseUs'
-import Footer from './components/footer/Footer'
+import Footer from './components/Footer/Footer'
 import GroupAssociate from './components/GroupAssociate'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar/Navbar'
