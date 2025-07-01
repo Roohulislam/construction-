@@ -3,18 +3,18 @@ import { useRef, useEffect, useState } from "react";
 
 // Logo imports
 import logo1 from "../assets/group/1.png";
-import logo2 from "../assets/group/2.png";
-import logo3 from "../assets/group/3.png";
-import logo4 from "../assets/group/4.jpg";
-import logo5 from "../assets/group/5.png";
-import logo6 from "../assets/group/6.png";
-import logo7 from "../assets/group/7.png";
-import logo8 from "../assets/group/8.png";
-import logo9 from "../assets/group/9.png";
-import logo10 from "../assets/group/10.png";
-import logo11 from "../assets/group/11.png";
-import logo12 from "../assets/group/12.png";
-import logo13 from "../assets/group/13.png";
+import logo2 from "../assets/group/3.png";
+import logo3 from "../assets/group/5.png";
+import logo4 from "../assets/group/6.png";
+import logo5 from "../assets/group/7.png";
+import logo6 from "../assets/group/8.png";
+import logo7 from "../assets/group/9.png";
+import logo8 from "../assets/group/commisionn.png";
+import logo9 from "../assets/group/fwo.png";
+import logo10 from "../assets/group/NHA-highway.png";
+import logo11 from "../assets/group/perraa.png";
+import logo12 from "../assets/group/royal estate.png";
+import logo13 from "../assets/group/wb.png";
 import logo14 from "../assets/group/GFSlogo.png";
 
 const GroupAssociate = () => {
@@ -167,12 +167,12 @@ const GroupAssociate = () => {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto space-y-12">
+    <section style={{ backgroundColor: "#faf9f5" }} className="py-8 mt-1 px-4  sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-6xl mx-auto space-y-10 bg-amber-200  rounded-4xl  ">
         {/* THE GROUP Section */}
         <div>
           {/* Desktop Layout */}
-          <div className="hidden md:block">
+          <div className="hidden md:block m-8 ">
             <AutoScrollCarousel 
               logos={duplicatedGroupLogos} 
               carouselRef={groupCarousel} 
@@ -182,7 +182,7 @@ const GroupAssociate = () => {
           </div>
           
           {/* Mobile Layout */}
-          <div className="md:hidden">
+          <div className="md:hidden m-8 pt-4">
             <MobileAutoScrollCarousel 
               logos={groupLogos}
               title="THE GROUP"
@@ -193,7 +193,7 @@ const GroupAssociate = () => {
         {/* THE ASSOCIATE Section */}
         <div>
           {/* Desktop Layout */}
-          <div className="hidden md:block">
+          <div className="hidden md:block m-4">
             <AutoScrollCarousel 
               logos={duplicatedAssociateLogos} 
               carouselRef={associateCarousel} 
@@ -203,7 +203,7 @@ const GroupAssociate = () => {
           </div>
           
           {/* Mobile Layout */}
-          <div className="md:hidden">
+          <div className="md:hidden m-8 pb-8">
             <MobileAutoScrollCarousel 
               logos={associateLogos}
               title="THE ASSOCIATE"

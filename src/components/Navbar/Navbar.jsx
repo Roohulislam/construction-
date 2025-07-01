@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import s1Logo from "../../assets/logos/logo.jpg";
-import s2Logo from "../../assets/logos/logo.jpg";
+import s1Logo from "../../assets/logos/logowithoutbgf.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,89 +39,80 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed -mt-16 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "shadow-md" : ""
       }`}
+      style={{ backgroundColor: "#0a1f38" }}
     >
       {/* Top Bar - Visible on large screens */}
-      <div className="hidden lg:flex items-center justify-between px-6 py-2 bg-gray-100">
+      <div className="hidden lg:flex items-center justify-between px-6 py-3" style={{ backgroundColor: "#0a1f38" }}>
         <div className="flex items-center space-x-4">
-          <img src={s1Logo} alt="Company Logo 1" className="h-12 object-contain" />
-          <img src={s2Logo} alt="Company Logo 2" className="h-12 object-contain" />
+          <img src={s1Logo} alt="Company Logo" className="h-12 object-contain" />
+          <div className="text-white">
+            <h1 className="text-xl font-bold">M/S FAIZ-UR-REHMAN & CO</h1>
+            <p className="text-sm">Engineering Excellence Since 1962</p>
+          </div>
         </div>
         
         <div className="flex items-center space-x-4">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          <button 
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            style={{ backgroundColor: "#1e4a7a" }}
+          >
             EMPLOYEE LOGIN
           </button>
-          <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition">
+          <button 
+            className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 transition"
+            style={{ backgroundColor: "#f0f0f0" }}
+          >
             COMPANY PROFILE
           </button>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white shadow-sm">
+      <nav style={{ backgroundColor: "#0a1f38" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            {/* Mobile menu button */}
+            {/* Mobile logo and heading */}
             <div className="flex items-center lg:hidden">
-              <button
-                onClick={toggleMenu}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
-              >
-                <svg
-                  className="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-                  />
-                </svg>
-              </button>
-            </div>
-
-            {/* Logo for mobile */}
-            <div className="flex items-center lg:hidden">
-              <img src={s2Logo} alt="Company Logo" className="h-10" />
+              <img src={s1Logo} alt="Company Logo" className="h-10" />
+              <div className="text-white ml-2">
+                <h1 className="text-sm font-bold">M/S FAIZ-UR-REHMAN & CO</h1>
+                <p className="text-xs">Since 1962</p>
+              </div>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex lg:items-center lg:space-x-8">
+            <div className="hidden lg:flex lg:items-center lg:space-x-6">
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 HOME
               </a>
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/aboutus"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 ABOUT US
               </a>
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/services"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 SERVICES
               </a>
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/resources"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 RESOURCES
               </a>
 
               {/* Projects Dropdown */}
               <div className="relative group">
-                <button className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium flex items-center">
+                <button className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium flex items-center transition-colors">
                   PROJECTS
                   <svg
                     className="ml-1 h-4 w-4"
@@ -139,13 +129,13 @@ const Navbar = () => {
                 </button>
                 <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                   <a
-                    href="#"
+                    href="/projects"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     CURRENT PROJECTS
                   </a>
                   <a
-                    href="#"
+                    href="/projects"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     EXECUTED PROJECTS
@@ -154,20 +144,20 @@ const Navbar = () => {
               </div>
 
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/qhse"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 QHSE
               </a>
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/careers"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 CAREERS
               </a>
               <a
-                href="#"
-                className="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="/contact"
+                className="text-white hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors"
               >
                 CONTACT
               </a>
@@ -183,8 +173,15 @@ const Navbar = () => {
                   >
                     <input
                       type="text"
-                      placeholder="Search..."
-                      className="px-3 py-1 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-blue-500 w-48"
+                      placeholder="Search"
+                      className="px-3 py-1 rounded-l-md focus:outline-none focus:ring-1 focus:ring-blue-500 w-48"
+                      style={{
+                        borderColor: "#f4cb4b",
+                        color: "white",
+                        backgroundColor: "#4a5568",
+                        borderWidth: "1px",
+                        borderStyle: "solid"
+                      }}
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       autoFocus
@@ -192,6 +189,7 @@ const Navbar = () => {
                     <button
                       type="submit"
                       className="p-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700"
+                      style={{ backgroundColor: "#1e4a7a" }}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +210,7 @@ const Navbar = () => {
                 ) : (
                   <button
                     onClick={toggleSearch}
-                    className="p-2 text-gray-700 hover:text-blue-600"
+                    className="p-2 text-white hover:text-blue-300"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,11 +231,11 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* Mobile search and login */}
+            {/* Mobile search and menu buttons */}
             <div className="flex items-center lg:hidden space-x-2">
               <button
                 onClick={toggleSearch}
-                className="p-2 text-gray-700 hover:text-blue-600"
+                className="p-2 text-white hover:text-blue-300"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -254,10 +252,13 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <button className="p-2 text-gray-700 hover:text-blue-600">
+              <button
+                onClick={toggleMenu}
+                className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 focus:outline-none"
+              >
                 <svg
+                  className="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -266,7 +267,7 @@ const Navbar = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                    d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                   />
                 </svg>
               </button>
@@ -276,12 +277,19 @@ const Navbar = () => {
 
         {/* Mobile Search */}
         {isSearchOpen && (
-          <div className="lg:hidden px-4 py-2 bg-white border-t">
+          <div className="lg:hidden px-4 py-2" style={{ backgroundColor: "#0a1f38" }}>
             <form onSubmit={handleSearch} className="flex items-center">
               <input
                 type="text"
                 placeholder="Search..."
-                className="flex-1 px-3 py-2 border rounded-l-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                className="flex-1 px-3 py-2 rounded-l-md focus:outline-none focus:ring-1 focus:ring-blue-500"
+                style={{
+                  borderColor: "#f4cb4b",
+                  color: "white",
+                  backgroundColor: "#4a5568",
+                  borderWidth: "1px",
+                  borderStyle: "solid"
+                }}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 autoFocus
@@ -289,6 +297,7 @@ const Navbar = () => {
               <button
                 type="submit"
                 className="px-4 py-2 bg-blue-600 text-white rounded-r-md hover:bg-blue-700"
+                style={{ backgroundColor: "#1e4a7a" }}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -311,36 +320,36 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-white">
+          <div className="lg:hidden" style={{ backgroundColor: "#0a1f38" }}>
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 HOME
               </a>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/aboutus"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 ABOUT US
               </a>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/services"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 SERVICES
               </a>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/resources"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 RESOURCES
               </a>
               <div>
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                  className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
                 >
                   PROJECTS
                   <svg
@@ -358,39 +367,42 @@ const Navbar = () => {
                 </button>
                 <div className="pl-4">
                   <a
-                    href="#"
-                    className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                    href="/projects"
+                    className="block px-3 py-2 text-sm font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
                   >
                     CURRENT PROJECTS
                   </a>
                   <a
-                    href="#"
-                    className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                    href="/projects"
+                    className="block px-3 py-2 text-sm font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
                   >
                     EXECUTED PROJECTS
                   </a>
                 </div>
               </div>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/qhse"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 QHSE
               </a>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/careers"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 CAREERS
               </a>
               <a
-                href="#"
-                className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50"
+                href="/contact"
+                className="block px-3 py-2 text-base font-medium text-white hover:text-blue-300 hover:bg-blue-900/30 rounded"
               >
                 CONTACT
               </a>
-              <div className="pt-4 pb-2 border-t">
-                <button className="w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mb-2">
+              <div className="pt-4 pb-2 border-t border-blue-900/50">
+                <button 
+                  className="w-full px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 mb-2"
+                  style={{ backgroundColor: "#1e4a7a" }}
+                >
                   EMPLOYEE LOGIN
                 </button>
                 <button className="w-full px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">

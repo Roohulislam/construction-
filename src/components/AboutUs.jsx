@@ -75,7 +75,7 @@ Tannery Pollution Control
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8">
+    <section style={{ backgroundColor: "#faf9f5" }} className="py-2 px-2 sm:px-6 lg:px-8">
       {/* Heading with gray background */}
       <div className="bg-gray-100 py-12 mb-12">
         <div className="max-w-7xl mx-auto">

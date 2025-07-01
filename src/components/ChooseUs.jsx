@@ -39,7 +39,7 @@ const ChooseUs = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section style={{ backgroundColor: "#faf9f5" }} className="py-2 px-2 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <motion.h2
@@ -51,7 +51,7 @@ const ChooseUs = () => {
           >
             WHY CHOOSE US
           </motion.h2>
-          <div className="w-20 h-1 bg-green-600 mx-auto mb-8"></div>
+          <div className="w-20 h-1 bg-blue-950 mx-auto mb-8"></div>
         </div>
 
         {/* Split-screen layout for larger screens */}
@@ -96,7 +96,7 @@ const ChooseUs = () => {
               className="flex-1"
             >
               <p className="text-lg text-gray-700 mb-6">
-                Habib Rafiq (Pvt.) Limited has come a long way to symbolize
+                S/M Faiz-ur-rehman & Co (Pvt.) Limited has come a long way to symbolize
                 commitment, distinction and professional Excellence by meeting the
                 stringent, demanding and extra ordinary work requirements of the
                 client.
@@ -109,7 +109,7 @@ const ChooseUs = () => {
                   transition={{ duration: 0.4 }}
                   className="text-lg text-gray-700 mb-6"
                 >
-                  HRL has undertaken prestigious projects of high engineering,
+                  S/M has undertaken prestigious projects of high engineering,
                   national and international importance involving civil, electrical
                   and mechanical works for the last 60 years.
                 </motion.p>
@@ -117,7 +117,7 @@ const ChooseUs = () => {
 
               <button
                 onClick={toggleReadMore}
-                className="flex items-center text-green-600 font-semibold hover:text-green-800 transition-colors mb-8 lg:mb-12"
+                className="flex items-center text-blue-950 font-semibold hover:text-yellow-600 transition-colors mb-8 lg:mb-12"
               >
                 {isExpanded ? "READ LESS" : "READ MORE"}
                 <svg
@@ -152,8 +152,8 @@ const ChooseUs = () => {
                   className="bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col items-center text-center"
                 >
                   <motion.div
-                    whileHover={{ rotate: 10, scale: 1.1 }}
-                    className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mb-3 sm:mb-4"
+                    whileHover={{ rotate: 10, scale: 1.1 }} style={{ backgroundColor: "#f4cb4b" }}
+                    className="w-12 h-12 sm:w-16 sm:h-16  rounded-full flex items-center justify-center mb-3 sm:mb-4"
                   >
                     <img
                       src={feature.icon}
