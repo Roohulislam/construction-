@@ -5,13 +5,13 @@ const Contact = () => {
   return (
     <section style={{ backgroundColor: "#faf9f5" }} className="py-2 px-2 sm:px-6 lg:px-8 bg-gray-50">
       {/* Heading with gray background */}
-      <div className="bg-gray-100 py-12 mb-12">
+      <div className="bg-gray-100 py-2 mb-2">
         <div className="max-w-7xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 text-center"
+            className="text-2xl md:text-4xl font-bold text-gray-900 text-center"
           >
             CONTACT
           </motion.h1>

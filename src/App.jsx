@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { SearchProvider } from './context/SearchContext';
 import Home from './pages/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
@@ -11,10 +12,12 @@ import QHSE from './components/QHSE';
 import Careers from './components/Careers';
 import Contact from './components/Contact';
 import Services from './components/Services/Services';
+import SearchResults from './pages/SearchResults';
 
 const App = () => {
   return (
-    <BrowserRouter>   
+    <BrowserRouter> 
+          <SearchProvider>  
       <div className="w-full overflow-x-hidden">
         <Navbar />
         {/* Main content container with top padding */}
@@ -29,10 +32,12 @@ const App = () => {
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/search" element={<SearchResults/> } />
           </Routes>
         </div>
         <Footer />
       </div>
+       </SearchProvider>
     </BrowserRouter>
   );
 };

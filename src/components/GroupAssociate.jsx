@@ -168,7 +168,7 @@ const GroupAssociate = () => {
 
   return (
     <section style={{ backgroundColor: "#faf9f5" }} className="py-8 mt-1 px-4  sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-6xl mx-auto space-y-10 bg-amber-200  rounded-4xl  ">
+      <div className="max-w-6xl mx-auto space-y-10 bg-amber-100  rounded-4xl  ">
         {/* THE GROUP Section */}
         <div>
           {/* Desktop Layout */}

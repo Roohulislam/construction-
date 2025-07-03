@@ -107,14 +107,14 @@ const Services = () => {
   };
 
   return (
-    <section style={{ backgroundColor: "#faf9f5" }} className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section style={{ backgroundColor: "#faf9f5" }} className="py-12 px-4 mb-2 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Header Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-8">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-6 "
+          className="text-3xl md:text-4xl font-bold text-gray-900 uppercase mb-6 "
         >
           OUR SERVICES
         </motion.h2>
