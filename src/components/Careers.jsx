@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { careersTabs, careersContent } from '../data/careers';
+import { careersTabs, careersContent } from '../Data/careers';
 
 const Careers = () => {
   const [activeTab, setActiveTab] = useState('careers');

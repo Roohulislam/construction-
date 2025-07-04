@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { qhseTabs, qhseContent } from '../data/qhse';
+import { qhseTabs, qhseContent } from '../Data/qhse';
 
 const QHSE = () => {
   const [activeTab, setActiveTab] = useState('about');
