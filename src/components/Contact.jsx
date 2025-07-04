@@ -27,7 +27,7 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
               className="bg-white p-6 rounded-lg shadow-md"
-            >
+            > 
               <div className="flex items-start mb-4">
                 <div className="bg-green-100 p-3 rounded-full mr-4">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

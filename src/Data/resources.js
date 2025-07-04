@@ -28,7 +28,21 @@ export const resourcesContent = {
       'Registered with Pakistan Engineering Council',
       'Compliant with all national construction regulations'
     ],
-    additionalInfo: 'We maintain all required certifications and continuously update our compliance with evolving industry standards.'
+    additionalInfo: 'We maintain all required certifications and continuously update our compliance with evolving industry standards.',
+    certificates: [
+      {
+        src: '/src/assets/Client Requirement/nha.jpg',
+        alt: 'NHA'
+      },
+      {
+        src: '/src/assets/Client Requirement/fbr.jpg',
+        alt: 'FBR'
+      },
+      {
+        src: '/src/assets/Client Requirement/contractor.jpg',
+        alt: 'Construction License'
+      }
+    ]
   },
   'specializations': {
     title: 'Technical Specializations',

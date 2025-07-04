@@ -1,3 +1,19 @@
+import img1 from '../assets/projects/Construction of residential facility for forest department officials  create me image.jpg';
+import img2 from "../assets/projects/Construction of district administrative headquarters  create me image.jpg"
+import img3 from "../assets/projects/Construction of GPS Kikriala, GPS Masina Batangi, GPS Banota, GPS Riala Sialkot, GPS Seri Banda Sarrar Chamiali create me image.jpg"
+import img4 from "../assets/projects/Construction of government middle and primary schools give image for pakistan.jpg"
+import img5 from "../assets/projects/Construction of government girls high school  create me image for pakistan.jpg"
+import img6 from "../assets/projects/Construction of police station facility create me image for pakistan.jpg"
+import img7 from "../assets/projects/Reconstruction of basic health unit create me image for pakistan.jpg"
+import img8 from "../assets/projects/Construction of multiple government buildings.jpg"
+import img9 from "../assets/projects/Construction of multiple government buildings  give me simple image in pakistan.jpg"
+import img10 from "../assets/projects/Construction of multiple buildings for forest department  give me simple image pakistan view.jpg"
+import img11 from "../assets/projects/Construction of administrative buildings for forest department  create simple image for pakistan.jpg"
+import img12 from "../assets/projects/Construction of primary and middle schools  create me image for pakistan.jpg"
+import img13 from "../assets/projects/Construction of multiple educational buildings create me for pakistan.jpg"
+import img14 from "../assets/projects/Road improvement and black topping project covering 9km section  craete me image for pakistan.jpg"
+import img15 from "../assets/projects/New road construction in mountainous terrain create me an image f;or pakistan.jpg"
+
 export const projectCategories = {
   buildings: {
     title: "Building Construction Projects",
@@ -9,7 +25,7 @@ export const projectCategories = {
         client: "DFO Gailes Forest Division Abbottabad",
         location: "Abbottabad",
         cost: "20.33 Million PKR",
-        image: "/images/government-building.jpg",
+        image: img1,
         details: "Construction of residential facility for forest department officials"
       },
       {
@@ -18,7 +34,7 @@ export const projectCategories = {
         client: "Executive Engineer Health Shangla at Alpuri",
         location: "Alpuri, Shangla",
         cost: "25.01 Million PKR",
-        image: "/images/secretariat-building.jpg",
+        image: img2,
         details: "Construction of district administrative headquarters"
       },
       {
@@ -27,7 +43,7 @@ export const projectCategories = {
         client: "Deputy Director (Reconstruction) PERRA Shangla",
         location: "Various locations in Shangla",
         cost: "34.191 Million PKR",
-        image: "/images/school-construction.jpg",
+        image: img3,
         details: "Construction of GPS Kikriala, GPS Masina Batangi, GPS Banota, GPS Riala Sialkot, GPS Seri Banda Sarrar Chamiali"
       },
       {
@@ -36,7 +52,7 @@ export const projectCategories = {
         client: "Deputy Director W&S Department Shangla",
         location: "Shangla District",
         cost: "16.715 Million PKR",
-        image: "/images/school-building.jpg",
+        image: img4,
         details: "Construction of government middle and primary schools"
       },
       {
@@ -45,7 +61,7 @@ export const projectCategories = {
         client: "Deputy Director (Reconstruction) PERRA Shangla",
         location: "Shangla District",
         cost: "12.10 Million PKR",
-        image: "/images/high-school.jpg",
+        image: img5,
         details: "Construction of government girls high school"
       },
       {
@@ -54,7 +70,7 @@ export const projectCategories = {
         client: "Deputy Director (Reconstruction) PERRA Shangla",
         location: "Karora, Shangla",
         cost: "4.787 Million PKR",
-        image: "/images/police-post.jpg",
+        image: img6,
         details: "Construction of police station facility"
       },
       {
@@ -63,7 +79,7 @@ export const projectCategories = {
         client: "Community Uplift Program",
         location: "Maira, Shangla",
         cost: "31.90 Million PKR",
-        image: "/images/health-center.jpg",
+        image: img7,
         details: "Reconstruction of basic health unit"
       },
       {
@@ -72,7 +88,7 @@ export const projectCategories = {
         client: "SDO, C&W Division Battagram",
         location: "Battagram District",
         cost: "13.10 Million PKR",
-        image: "/images/government-buildings.jpg",
+        image: img8,
         details: "Construction of multiple government buildings"
       },
       {
@@ -81,7 +97,7 @@ export const projectCategories = {
         client: "SDO, C&W Division Mansehra",
         location: "Mansehra District",
         cost: "21.700 Million PKR",
-        image: "/images/mansehra-buildings.jpg",
+        image: img9,
         details: "Construction of multiple government buildings"
       },
       {
@@ -90,7 +106,7 @@ export const projectCategories = {
         client: "Deputy Director W&S Department Shangla",
         location: "Shangla District",
         cost: "68.602 Million PKR",
-        image: "/images/forest-buildings.jpg",
+        image: img10,
         details: "Construction of multiple buildings for forest department"
       },
       {
@@ -99,7 +115,7 @@ export const projectCategories = {
         client: "Deputy Director W&S Department Abbottabad",
         location: "Abbottabad",
         cost: "50.132 Million PKR",
-        image: "/images/governance-building.jpg",
+        image: img11,
         details: "Construction of administrative buildings for forest department"
       },
       {
@@ -108,7 +124,7 @@ export const projectCategories = {
         client: "Deputy Director W&S Department Shangla",
         location: "Bar Batkote, Shangla",
         cost: "18.993 Million PKR",
-        image: "/images/village-schools.jpg",
+        image: img12,
         details: "Construction of primary and middle schools"
       },
       {
@@ -117,7 +133,7 @@ export const projectCategories = {
         client: "Deputy Director W&S Department Shangla",
         location: "Shangla District",
         cost: "24.384 Million PKR",
-        image: "/images/education-facilities.jpg",
+        image: img13,
         details: "Construction of multiple educational buildings"
       }
     ]
@@ -132,7 +148,7 @@ export const projectCategories = {
         client: "Deputy Director (Reconstruction) PERRA Shangla",
         location: "Contract-2 (9-18 KM), Shangla",
         cost: "67.356 Million PKR",
-        image: "/images/mountain-road.jpg",
+        image: img14,
         details: "Road improvement and black topping project covering 9km section"
       },
       {
@@ -141,7 +157,7 @@ export const projectCategories = {
         client: "XEN C&W Deptt: Shangla",
         location: "Shangla District",
         cost: "15.397 Million PKR",
-        image: "/images/rural-road.jpg",
+        image: img15,
         details: "New road construction in mountainous terrain"
       }
     ]

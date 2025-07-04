@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiChevronRight } from 'react-icons/fi';
-import { resourcesTabs, resourcesContent } from '../data/resources';
+import { resourcesTabs, resourcesContent } from '../Data/resources';
 
 const Resources = () => {
   const [activeTab, setActiveTab] = useState('resources');
@@ -116,7 +116,7 @@ const Resources = () => {
                   ))}
                 </ul>
 
-                {/* Specializations Grid (only for specializations tab) */}
+                {/* Specializations Grid */}
                 {activeTab === 'specializations' && (
                   <div className="mt-8">
                     <h3 className="text-lg font-semibold text-gray-800 mb-4">
@@ -140,6 +140,31 @@ const Resources = () => {
                         <div key={index} className="bg-gray-50 p-3 rounded border border-gray-200">
                           {item}
                         </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Certificate Images Section */}
+                {activeTab === 'certifications' && (
+                  <div className="mt-8">
+                    <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                      Our Certificates
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      {currentTabData.certificates.map((cert, index) => (
+                        <motion.div 
+                          key={index}
+                          whileHover={{ scale: 1.03 }}
+                          className="bg-gray-50 p-2 rounded border border-gray-200"
+                        >
+                          <img 
+                            src={cert.src} 
+                            alt={cert.alt}
+                            className="w-full h-auto rounded shadow-sm"
+                          />
+                          <p className="text-center text-sm text-gray-600 mt-2">{cert.alt}</p>
+                        </motion.div>
                       ))}
                     </div>
                   </div>

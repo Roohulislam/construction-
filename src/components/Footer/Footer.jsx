@@ -1,4 +1,14 @@
 import { motion } from "framer-motion";
+import { 
+  FiMail, 
+  FiPhone, 
+  FiMapPin, 
+  FiArrowRight,
+  FiFacebook,
+  FiTwitter,
+  FiLinkedin,
+  FiInstagram
+} from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -15,11 +25,26 @@ const Footer = () => {
             <h3 className="text-white text-lg font-bold uppercase mb-4">OUR COMPANY</h3>
             <ul className="space-y-2">
               {['About Us', 'Services', 'MD Message', 'News & Events', 'Our Clients', 'Resources', 'Careers', 'Contact Us'].map((item, index) => (
-                <li key={index}>
+                <li key={index} className="flex items-center">
+                  <FiArrowRight className="mr-2 text-green-400" size={14} />
                   <a href="#" className="hover:text-green-400 transition-colors">{item}</a>
                 </li>
               ))}
             </ul>
+            <div className="mt-4 flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <FiFacebook size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <FiTwitter size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <FiLinkedin size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
+                <FiInstagram size={20} />
+              </a>
+            </div>
           </motion.div>
 
           {/* OUR SERVICES */}
@@ -32,7 +57,8 @@ const Footer = () => {
             <h3 className="text-white text-lg font-bold uppercase mb-4">OUR SERVICES</h3>
             <ul className="space-y-2">
               {['Power & Energy', 'Petrochemicals', 'Oil & Gas', 'Environmental', 'Air Ports & Aviation', 'Water Resources Engineering', 'Buildings', 'Road & Infrastructure'].map((item, index) => (
-                <li key={index}>
+                <li key={index} className="flex items-center">
+                  <FiArrowRight className="mr-2 text-green-400" size={14} />
                   <a href="#" className="hover:text-green-400 transition-colors">{item}</a>
                 </li>
               ))}
@@ -48,12 +74,27 @@ const Footer = () => {
           >
             <h3 className="text-white text-lg font-bold uppercase mb-4">GET IN TOUCH</h3>
             <p className="mb-4">We're here to listen:</p>
-            <address className="not-italic mb-4">
-              13, Block-H, Gulberg-II,<br />
-              Lahore, Pakistan
-            </address>
-            <p className="mb-1">+92 423 571 1411</p>
-            <p className="mb-4">hrl@habibrafiq.com</p>
+            <div className="space-y-3">
+              <div className="flex items-start">
+                <FiMapPin className="mt-1 mr-3 text-green-400" size={16} />
+                <address className="not-italic">
+                  13, Block-H, Gulberg-II,<br />
+                  Lahore, Pakistan
+                </address>
+              </div>
+              <div className="flex items-center">
+                <FiPhone className="mr-3 text-green-400" size={16} />
+                <a href="tel:+924235711411" className="hover:text-green-400 transition-colors">
+                  +92 000000000
+                </a>
+              </div>
+              <div className="flex items-center">
+                <FiMail className="mr-3 text-green-400" size={16} />
+                <a href="mailto:hrl@habibrafiq.com" className="hover:text-green-400 transition-colors">
+                  info@faizurrehman.com
+                </a>
+              </div>
+            </div>
           </motion.div>
 
           {/* OUR LOCATION */}
@@ -87,7 +128,7 @@ const Footer = () => {
           viewport={{ once: true }}
           className="pt-6 border-t border-gray-800 text-center text-sm"
         >
-          <p>© 2022 Habib Rafiq (Pvt.) Ltd. All Rights Reserved.</p>
+          <p>© 2022 S/M Faiz-ur-rehman (Pvt.) Ltd. All Rights Reserved.</p>
         </motion.div>
       </div>
     </footer>
